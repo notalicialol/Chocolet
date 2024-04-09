@@ -1,7 +1,8 @@
 export default function App() {
     return (
         <>
-            temp
+            i am rewriting chocolet in typescript
+            it will be up to speed very soon :)
         </>
     )
 }
