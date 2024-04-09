@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@nestjs/config": "^3.2.2",
+    "class-validator": "^0.14.1"
+  }
+}
