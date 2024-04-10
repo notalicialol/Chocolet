@@ -8,10 +8,11 @@ $background-color: #2d1c10;
 $primary-color: #402918;
 $accent-color: #ffffff;
 
+$heading-font: "Titan One";
 $body-font: "Nunito";
 
 body {
     font-family: $body-font;
-    background: $background-color;
+    background-color: $background-color;
     color: $accent-color;
 }
