@@ -1,7 +1,7 @@
 export default function App() {
     return (
         <>
-            This page is under construction.
+            Chocolet is currently under construction...
         </>
     )
 }
