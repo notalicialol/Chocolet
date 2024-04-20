@@ -1,4 +1,3 @@
-# Logs
 logs
 *.log
 npm-debug.log*
@@ -8,11 +7,15 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+package-lock.json
 dist
 dist-ssr
 *.local
+pnpm-lock.yaml
+bun.lockb
+config.json
+.env
 
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
