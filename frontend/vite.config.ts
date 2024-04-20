@@ -18,6 +18,7 @@ export default defineConfig({
         }
     },
     server: {
+        port: Number(process.env.VITE_FRONTEND_PORT),
         proxy: {
             "/api": {
                 target: process.env.VITE_BACKEND_URL,
