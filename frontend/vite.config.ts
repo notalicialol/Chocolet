@@ -12,6 +12,8 @@ export default defineConfig({
     resolve: {
         alias: {
             "@types": "/src/types",
+            "@pages": "/src/pages",
+            "@routes": "/src/routes",
             "@components": "/src/components",
             "@controllers": "/src/controllers",
             "@stores": "/src/stores",
