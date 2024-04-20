@@ -12,7 +12,7 @@ const router = createBrowserRouter([{
         <Background />
 
         <Outlet/>
-    </>,
+    </> ,
     children: [
         { id: "home", path: "/", element: <></> }
     ]
