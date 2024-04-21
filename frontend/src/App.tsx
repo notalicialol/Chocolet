@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import "./all.scss";
 import routes from "@routes/index";
 import pages from "@pages/index";
-// import { useLoading } from "@stores/LoadingStore";
+import { useLoading } from "@stores/LoadingStore";
 import { Background, RouteWrapper } from "@components/index";
 
 type RouteType = {
@@ -27,7 +27,7 @@ const App: React.FC = () => {
   const [header, setHeader] = useState<boolean>(false);
   const [sidebar, setSidebar] = useState<boolean>(false);
   const [topRight, setTopRight] = useState<boolean>(false);
-  /* const { loading, setLoading } = useLoading();
+  const { loading, setLoading } = useLoading();
 
   useEffect(() => {
     setLoading(true);
@@ -36,7 +36,7 @@ const App: React.FC = () => {
     return () => window.removeEventListener('load', handleLoad);
   }, [setLoading]);
 
-  if (loading) return <pages.Loading />; */
+  if (loading) return <pages.Loading />;
 
   return (
     <>
