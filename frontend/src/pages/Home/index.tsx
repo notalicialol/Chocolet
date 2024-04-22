@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import styles from "./home.module.scss";
 
 export default function Home() {
