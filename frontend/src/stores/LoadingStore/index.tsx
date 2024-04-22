@@ -1,20 +1,13 @@
-import { createContext, useContext, useState, useMemo, ReactNode } from 'react';
+import { createContext, useContext, useState, useMemo, ReactNode, FunctionComponent } from "react";
 
 interface LoadingContextType {
   loading: boolean;
   setLoading: (loading: boolean) => void;
 }
 
-const LoadingContext = createContext<LoadingContextType>({
-  loading: false,
-  setLoading: () => {},
-});
+const LoadingContext = createContext<LoadingContextType | undefined>(undefined);
 
-interface LoadingProviderProps {
-  children: ReactNode;
-}
-
-export function LoadingProvider({ children }: LoadingProviderProps) {
+export const LoadingProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
   const [loading, setLoading] = useState<boolean>(false);
   const value = useMemo(() => ({ loading, setLoading }), [loading]);
 
@@ -23,12 +16,12 @@ export function LoadingProvider({ children }: LoadingProviderProps) {
       {children}
     </LoadingContext.Provider>
   );
-}
+};
 
 export function useLoading(): LoadingContextType {
   const context = useContext(LoadingContext);
   if (!context) {
-    throw new Error('useLoading must be used within a LoadingProvider');
+    throw new Error("useLoading must be used within a LoadingProvider");
   }
   return context;
 }

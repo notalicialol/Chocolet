@@ -32,8 +32,8 @@ const App: React.FC = () => {
   useEffect(() => {
     setLoading(true);
     const handleLoad = () => setTimeout(() => setLoading(false), 1000);
-    document.readyState === 'complete' ? handleLoad() : window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
+    document.readyState === "complete" ? handleLoad() : window.addEventListener("load", handleLoad);
+    return () => window.removeEventListener("load", handleLoad);
   }, [setLoading]);
 
   if (loading) return <pages.Loading />;
