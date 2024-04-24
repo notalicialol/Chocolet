@@ -1,9 +1,8 @@
 .container {
-    height: 100%;
+    height: auto;
     width: 100%;
-    position: relative;
-    overflow-y: hidden;
-
+    overflow: auto;
+    
     @media only screen and (max-width: 1050px) {
         height: 100vh;
     }
@@ -157,51 +156,13 @@
     }
 }
 
-.topButton {
-    border-radius: 7px;
-    padding-bottom: 5px;
-    box-shadow: 0px -5px rgba(0, 0, 0, 0.2) inset, 0px 0px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    user-select: none;
-    transition: 200ms;
-    &:hover {
-        transform: scale(1.05);
-    }
-}
-
-.loginButton {
-    margin-right: 2.5vw;
-    width: 18vh;
-    height: 6vh;
-    line-height: 6vh;
-    font-size: 3.6vh;
-    background-color: var(--primary-color);
-    color: #fff;
-
-    @media only screen and (max-width: 1050px) {
-        margin-right: 5vw;
-    }
-}
-
-.signupButton {
-    width: 25vh;
-    height: 8vh;
-    line-height: 8vh;
-    font-size: 4.4vh;
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
 .versionInfo {
     position: absolute;
     bottom: 1vw;
     right: 0;
-    color: white;
-    margin: 0.5vw;
-    font-size: 0.75vw;
+    color: var(--accent-color);
+    margin: 7.5px;
+    font-size: 11.5px;
     text-align: right;
 
     @media only screen and (max-width: 1050px) {
@@ -214,12 +175,45 @@
     bottom: 0;
     right: 0;
     color: var(--accent-color);
-    margin: 0.5vw;
-    font-size: 0.75vw;
+    margin: 7.5px;
+    font-size: 11.5px;
     text-align: right;
-    display: block;
+    
+    @media only screen and (max-width: 1050px) {
+	margin: 0;
+	margin-right: 8px;
+	padding-bottom: 7px;
+    }
 }
 
 .tosText {
     text-decoration: underline;
+}
+
+.termsRequired {
+    position: absolute;
+    bottom: 1vw;
+    left: 0;
+    color: var(--accent-color);
+    margin: 7.5px;
+    font-size: 11.5px;
+    text-align: left;
+
+    @media only screen and (max-width: 1050px) {
+        display: none;
+    }
+}
+
+.copyrightText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--accent-color);
+    margin: 7.5px;
+    font-size: 11.5px;
+    text-align: left;
+
+    @media only screen and (max-width: 1050px) {
+        display: none;
+    }
 }

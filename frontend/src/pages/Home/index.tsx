@@ -4,9 +4,9 @@ import styles from "./home.module.scss";
 
 import { TransparentButton, BigButton } from "@components/index";
 
-/* to-do: make button components tomorrow to simplify code and fix version management
-    rewrite the scss so the appearance is more appealing, fix colors
-    just fix the text too
+/* to-do: 
+    just fix the mobile scss
+    more button components
 */
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
                     </div>
                     <div className={styles.welcomeDescription}>{import.meta.env.VITE_DESCRIPTION}</div>
                     <div className={styles.welcomeButtonContainer}>
-			            <TransparentButton to="/register" children={"Register"} />
+                        <TransparentButton to="/register" children={"Register"} />
                         <TransparentButton to="https://discord.gg/VHvynmJHpR" children={"Discord"} />
                     </div>
                 </div>
@@ -36,6 +36,8 @@ export default function Home() {
                     <BigButton width={"18vh"} height={"6vh"} lineHeight={"6vh"} fontSize={"3.6vh"} marginRight={"2.5vw"} to="/login" children={"Login"} />
                     <BigButton width={"25vh"} height={"8vh"} lineHeight={"8vh"} fontSize={"4.4vh"} to="/register" children={"Register"} />
                 </div>
+		<div className={styles.termsRequired}>By using this site you automatically agree to our Terms of Service.</div>
+		<div className={styles.copyrightText}>{import.meta.env.VITE_NAME} © 2024 All Rights Reserved.</div>
                 <div className={styles.versionInfo}>Running {import.meta.env.VITE_NAME} v{import.meta.env.VITE_VERSION}</div>
                 <div className={styles.tosLink}><Link to="/terms" className={styles.tosText}>Terms of Service</Link></div>
             </div>

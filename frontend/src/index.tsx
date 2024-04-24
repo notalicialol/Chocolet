@@ -6,4 +6,6 @@ import StoreWrapper from "@stores/index";
 
 import App from "./App";
 
+import "./fetch";
+
 createRoot(document.getElementById("app") as HTMLElement).render(<StrictMode><BrowserRouter><StoreWrapper><App /></StoreWrapper></BrowserRouter></StrictMode>);
