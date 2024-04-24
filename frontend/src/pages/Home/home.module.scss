@@ -9,16 +9,18 @@
 }
 
 .homeBlookImage {
-    float: right;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
     height: 100vh;
     width: 52.5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -o-object-fit: contain;
     object-fit: contain;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
     z-index: -1;
+    filter: drop-shadow(0 0 0.5vw var(--primary-color));
 
     @media only screen and (max-width: 1050px) {
         top: 7.26vh;
@@ -85,7 +87,7 @@
     color: var(--accent-color);
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 55%;
 
     @media only screen and (max-width: 1050px) {
         position: absolute;
@@ -112,12 +114,17 @@
     @media only screen and (max-width: 375px) {
         font-size: 5vh;
     }
+
+    @media only screen and (max-width: 254px) {
+        font-size: 4.5vh;
+    }
 }
 
 .welcomeDescription {
     font-size: 3.35vh;
     margin: 3vh 0;
     color: #fff;
+    max-width: 80%;
 
     @media only screen and (max-width: 1050px) {
         font-size: 2.2vh;
@@ -126,6 +133,10 @@
 
     @media only screen and (max-width: 375px) {
         font-size: 2vh;
+    }
+
+    @media only screen and (max-width: 254px) {
+        font-size: 1.8vh;
     }
 }
 
