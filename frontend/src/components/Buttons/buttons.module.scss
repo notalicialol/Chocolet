@@ -1,0 +1,43 @@
+.transparent {
+    border-color: var(--accent-color);
+    border-style: solid;
+    border-radius: 0.31vw;
+    border-width: 0.15vw;
+    font-size: 4.26vh;
+    width: 32vh;
+    line-height: 7vh;
+    text-align: center;
+    color: var(--accent-color);
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+    }
+
+    @media only screen and (max-width: 1050px) {
+        display: none;
+    }
+}
+
+.big {
+    border-radius: 7px;
+    padding-bottom: 5px;
+    box-shadow: 0px -5px rgba(0, 0, 0, 0.2) inset, 0px 0px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    user-select: none;
+    transition: 200ms;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
