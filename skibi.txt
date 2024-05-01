@@ -1,0 +1,8 @@
+boybob = getattribute("knifeboy", ".bob").parseAsJson().toString().asNumber();
+boybob.bob(the_haters)
+boybob.getKnife().stab(baby_gronk)
+
+const var knife = let
+
+
+var.knife.let.get(getter).stab.blooket.boybob.babygronk.rizz.tiktok.rizz.party.dance(skibidi_ohio)
