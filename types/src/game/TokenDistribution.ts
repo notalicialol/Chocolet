@@ -1,4 +1,4 @@
 export interface TokenDistribution {
-	chance: number;
+	percent: number;
 	amount: number;
 }

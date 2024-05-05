@@ -1,7 +1,8 @@
 enum Permission {
-    MUTE_USER = 1,
-    BAN_USER = 2,
-    BLACKLIST_USER = 4,
+    MUTE = 1,
+    BAN = 2,
+    VIEW_DELETED_MESSAGES = 3,
+    BLACKLIST = 4,
     MANAGE_MESSAGES = 8
 }
 

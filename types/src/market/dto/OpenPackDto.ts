@@ -1,9 +1,7 @@
-import { IsNotEmpty, IsNumber } from "class-validator";
-
 export class OpenPackDto {
-    @IsNotEmpty()
-	@IsNumber()
-    readonly packId: number;
-}
+    packId: number;
 
-export default OpenPackDto;
+    constructor(packId: number) {
+        this.packId = packId;
+    }
+}

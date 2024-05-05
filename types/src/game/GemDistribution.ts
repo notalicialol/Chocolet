@@ -1,4 +1,4 @@
 export interface GemDistribution {
-	chance: number;
+	percent: number;
 	amount: number;
 }
