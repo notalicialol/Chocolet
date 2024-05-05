@@ -75,7 +75,7 @@
     font-size: 7.3vh;
     text-shadow: 0.104vw 0.104vw 0.417vw grey;
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 400px) {
         font-size: 6vh;
     }
 }
@@ -97,6 +97,15 @@
         display: flex;
         flex-direction: column;
     }
+
+    @media only screen and (max-width: 450px) {
+        position: absolute;
+        top: 53vh;
+        left: 5vw;
+        color: var(--accent-color);
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .welcomeText {
@@ -111,8 +120,9 @@
         font-weight: bold;
     }
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 400px) {
         font-size: 5vh;
+        line-height: 5.5vh;
     }
 
     @media only screen and (max-width: 254px) {
@@ -127,16 +137,8 @@
     max-width: 80%;
 
     @media only screen and (max-width: 1050px) {
-        font-size: 2.2vh;
+        font-size: 2.5vh;
         margin: 1.5vh 0 3vh;
-    }
-
-    @media only screen and (max-width: 375px) {
-        font-size: 2vh;
-    }
-
-    @media only screen and (max-width: 254px) {
-        font-size: 1.8vh;
     }
 }
 
@@ -150,6 +152,33 @@
         flex-direction: row;
         gap: 1vw;
     }
+}
+
+.welcomeSocials {
+    margin-top: 2vh;
+    max-width: 32vh;
+    text-align: center;
+
+    @media only screen and (max-width: 1050px) {
+        display: none;
+    }
+}
+
+.welcomeSocialIcon {
+    cursor: pointer;
+    color: var(--accent-color);
+    font-size: 3.25vh;
+    transition: 200ms;
+    text-align: center;
+    margin-right: 1vw;
+
+    &:hover {
+        color: var(--shade-color);
+    }
+}
+
+.welcomeSocialRight {
+    margin-right: 0 !important;
 }
 
 .topButtonContainer {

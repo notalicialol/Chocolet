@@ -41,3 +41,27 @@
         transform: scale(1.05);
     }
 }
+
+.auth {
+    background-color: var(--primary-color);
+    border-color: #00000050;
+    border-radius: 6px;
+    border-style: solid;
+    color: var(--secondary-accent-color);
+    cursor: pointer;
+    display: block;
+    font-family: "Nunito";
+    font-size: 22px;
+    height: 45px;
+    margin: auto auto 20px;
+    outline: none;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all .2s cubic-bezier(.39, .5, .15, 1.36);
+
+    &:hover {
+        transform: scale(0.918);
+        border-color: var(--secondary-color);
+        color: var(--shade-color);
+    }
+}
