@@ -42,7 +42,7 @@ const App: React.FC = () => {
     <>
       <Helmet defer={false}>
         <title>{title || "Chocolet"}</title>
-        <meta name="description" content={description || "Default description"} />
+        <meta name="description" content={description || "The first ever chocolate-themed Blooket private server with mini-games, custom packs, and more, written in TypeScript by alicialol."} />
       </Helmet>
       <Background />
       <Routes>
